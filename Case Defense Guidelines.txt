@@ -1,0 +1,92 @@
+DEFENSE GUIDE:
+
+DATA MODEL:
+Relationships:
+*Look Up and Master-Detail Relationship
+Master-Detail Relationship:
+It is a tightly coupled record that has a direct dependency between the two objects. It can also be described as a parent-child relationship.
+The record of detail cannot be created without a master.
+The sharing rules are inherited from the master to the detail record.
+We cannot update the relationship to the master in a master-detail relationship.
+The number of master-detail relationships that can be used is limited to 2.
+Master-detail relationships are automatically included in report record types.
+We also cannot set the profile object permissions for the record of detail.
+If a master record is deleted then the record of its detail also gets deleted along with it, that is, it implements cascade delete.
+Roll-Up Summary can be created on a master detail.
+Lookup Relationship:
+This type of relationship can be used when we just need to have the relationship between two objects but not a direct dependency on each other.
+This is a loosely coupled relationship.
+These are used to reference commonly shared data, such as reference data.
+The maximum number of lookup relationships in a field can be 40.
+They are used to link two objects together when we do not want to have the behavior of the master-detail like sharing rules, profile permissions, and cascade delete.
+Lookups are used when we need to relate multiple ‘parents’ to the record of detail.
+Deletion of the parent just deletes the related field in the child but not the whole record.
+This type of relationship is also like a one-to-many relationship.
+
+Junction Object Purpose
+Salesforce Junction Objects give you a way to create a many-to-many relationship between Salesforce objects. They are created using a custom object and then relating two other objects via two master-detail relationships.
+
+CRITERIA IN LOOKUP FILTERS (Self Relationship)
+
+
+
+
+CUSTOMIZE USER INTERFACE
+
+Quick ACtions - What can Quick Actions do?
+Record Types and Page Layouts
+Chatter
+
+
+Cross Object FOrmulas
+Validation Rules
+FOrmula/Roll Up Summary
+
+
+SECURITY
+Custom Profiles
+Field Level Security
+Permission Set
+Sharing Settings
+
+OWD
+
+
+AUTOMATION
+PRocess Builder
+FLows
+
+Process Builder: Basic Building Blocks
+
+Remember, Process Builder is the simple calculator. It performs extremely well but does not need to be extremely complicated. Here are some actions you can take in Process Builder.
+
+Add a document to a folder
+Launch a flow
+Copy and Live Paste content from one document to another
+Add members to a document
+Submit a record for approval
+Export to a PDF
+
+Flow Builder: Advance Your Automation
+
+Remember Flow Builder is the ultra-powerful. Referring back to our calculator analogy, this is a top-of-the-line graphical calculator. You can build seamless interactions by building and distributing flows.
+
+Flows are applications built using our Cloud Flow Designer that can execute logic, interact with the Salesforce database, call Apex classes, and collect data from users. Using flows, you can:
+
+Build a guided user experience with dynamic screens, auto-launch and run behind the scenes, or both.
+Extend through Apex and Visualforce technologies.
+
+
+Workflow Rules
+bulletTasks—Assign a new task to a user, role, or record owner.
+bulletEmail Alerts—Send an email to one or more recipients you specify.
+bulletField Updates—Update the value of a field on a record.
+bulletOutbound Messages—Send a secure, configurable API message (in XML format) to a designated listener.
+
+
+Approval Process
+
+
+
+
+
